@@ -1,0 +1,6 @@
+@mixin thumbnail($height, $width) {
+    height: $height;
+    width: $width;
+    cursor: pointer;
+    background-size: cover;
+}

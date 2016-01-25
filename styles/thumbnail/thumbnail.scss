@@ -1,0 +1,52 @@
+@import 'thumbnail_mixins';
+
+.thumbnail_container {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0 10px 0;
+}
+
+ss-thumbnail {
+    display: block;
+    position: relative;
+    @include thumbnail(250px, 250px);
+    
+    
+    img {
+        opacity: 1;
+        position: absolute;
+        z-index: 2;
+        transition: all 120ms ease;
+    }
+    
+    p {
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-60%);
+    }
+    
+    .price {
+        position: absolute;
+        color: #216c2a;
+        font-weight: 500;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .title {
+        position: absolute;
+        bottom: -25px;
+        font-size: 1.2em;
+        width: 100%;
+        text-align: center
+    }
+    
+    &:hover {
+        img {
+            opacity: 0;
+        }
+    }
+    
+}

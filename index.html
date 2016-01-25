@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <link rel="stylesheet" href="main.css"> 
+    </head>
+    <body ng-app='app'>
+        <nav>
+            <ul>
+                <a ui-sref="home" class="navBar">
+                    <li class="link">Home</li>
+                </a>
+                <a ui-sref="thumbnails" class="navBar">
+                    <li class="link">Thumbnails</li>
+                </a>
+               <!-- <a href="" class="navBar">
+                    <li class="link"></li>
+                </a>
+                <a href="" class="navBar">
+                    <li class="link"></li>
+                </a>-->
+            </ul>
+        </nav>
+        
+        <ui-view></ui-view>
+        
+        
+        <script src='node_modules/angular/angular.js'></script>
+        <script src='node_modules/angular-ui-router/build/angular-ui-router.js'></script>
+        <script src='bundle.js'></script>
+    </body>
+</html>

@@ -1,0 +1,99 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+  background: #666;
+}
+
+nav ul {
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  list-style-type: none;
+  color: #f7f7f7;
+}
+
+nav li:hover {
+  color: cornflowerblue;
+}
+
+.thumbnail_container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  margin: 10px 0 10px 0;
+}
+
+ss-thumbnail {
+  display: block;
+  position: relative;
+  height: 250px;
+  width: 250px;
+  cursor: pointer;
+  background-size: cover;
+}
+
+ss-thumbnail img {
+  opacity: 1;
+  position: absolute;
+  z-index: 2;
+  transition: all 120ms ease;
+}
+
+ss-thumbnail p {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translateY(-60%);
+          transform: translateY(-60%);
+}
+
+ss-thumbnail .price {
+  position: absolute;
+  color: #216c2a;
+  font-weight: 500;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+ss-thumbnail .title {
+  position: absolute;
+  bottom: -25px;
+  font-size: 1.2em;
+  width: 100%;
+  text-align: center;
+}
+
+ss-thumbnail:hover img {
+  opacity: 0;
+}
