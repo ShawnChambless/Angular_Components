@@ -12,9 +12,11 @@
                 <a ui-sref="thumbnails" class="navBar">
                     <li class="link">Thumbnails</li>
                 </a>
-               <!-- <a href="" class="navBar">
-                    <li class="link"></li>
+               <a ui-sref='carousel' class="navBar">
+                    <li class="link">Carousel</li>
                 </a>
+                
+                <!--
                 <a href="" class="navBar">
                     <li class="link"></li>
                 </a>-->
@@ -23,8 +25,9 @@
         
         <ui-view></ui-view>
         
-        
+        <script src='node_modules/jquery/dist/jquery.min.js'></script>
         <script src='node_modules/angular/angular.js'></script>
+        <!--<script src="node_modules/angular-slick/dist/slick.min.js"></script>-->
         <script src='node_modules/angular-ui-router/build/angular-ui-router.js'></script>
         <script src='bundle.js'></script>
     </body>

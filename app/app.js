@@ -11,6 +11,11 @@ angular.module('app', ['ui.router'])
         .state('thumbnails', {
             url: '/thumbnails', 
             templateUrl: 'app/thumbnail/thumbnail.html'
+        })
+        
+        .state('carousel', {
+            url: '/carousel',
+            templateUrl: 'app/carousel/carousel.html'
         });
         
 });

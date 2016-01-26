@@ -1,0 +1,15 @@
+<slick dots=true 
+       infinite=true 
+       init-on-load=true 
+       autoplay=true 
+       autoplay-speed=4000 
+       speed=700 
+       responsive=true >
+    
+    <div ng-repeat='image in images track by $index'>
+    
+        <img ng-src='{{image}}'>
+        
+    </div>
+    
+</slick>
